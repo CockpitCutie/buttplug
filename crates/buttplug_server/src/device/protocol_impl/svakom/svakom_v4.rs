@@ -38,7 +38,7 @@ impl ProtocolHandler for SvakomV4 {
           0x03,
           feature_index as u8 + 1,
           0x00,
-          if speed == 0 { 0x00 } else { 0x03 },
+          if speed == 0 { 0x00 } else { 0x01 },
           speed as u8,
         ]
         .to_vec(),
